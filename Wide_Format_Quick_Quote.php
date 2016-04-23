@@ -11,21 +11,45 @@ Quick Quote
 
 <div style="padding: 50px;">
 <div class="row">
-	<div class="col-md-6">
-		<img src="logo_copy.png" align="right">
+	<div class="col-md-2">
+		<img src="logo_copy.png" align="left">
 	</div>
-	<div class="col-md-6">
-		<h3>Wide Format Quote Generator</h3>
-		<h2><small>PRICES INCLUDE $50 SETUP FEE</small></h2>
+	<div class="col-md-10">
+		<h4>Wide Format Quote Generator</h4>
+		<h4><small>PRICES INCLUDE $50 SETUP FEE</small></h4>
 	</div>
 </div>
 <br><br>
+		<div class="row">
+			<div class="col-md-6"><h3>Sales Rep:</h3>
+				<select id="sales_rep" class="form-control">
+					<option value="anthony_narducci_sig.jpg">Anthony Narducci</option>
+					<option value="bob_alderson_sig.jpg">Bob Alderson</option>
+					<option value="brent_gehre_sig.jpg">Brent Gehre</option>
+					<option value="bruce_vanderhaar_sig.jpg">Bruce VanderHaar</option>
+					<option value="candice_scott_sig.jpg">Candice Scott</option>
+					<option value="chandler_yelton_sig.jpg">Chandler Yelton</option>
+					<option value="connie_forney_sig.jpg">Connie Forney</option>
+					<option value="cynthia_brussels_sig.jpg">Cynthia Brussels</option>
+					<option value="dick_ganzert_sig.jpg">Dick Ganzert</option>
+					<option value="jason_hogue_sig.jpg">Jason Hogue</option>
+					<option value="lucy_lawrence_sig.jpg">Lucy Lawrence</option>
+					<option value="michael_szymanski_sig.jpg">Michael Szymanski</option>
+					<option value="nicole_kuszynski_sig.jpg">Nicole Kuszynski</option>
+					<option value="norb_rasmussen_sig.jpg">Norb Rasmussen</option>
+					<option value="scott_maines_sig.jpg">Scott Maines</option>
+					<option value="sean_laizure_sig.jpg">Sean Laizure</option>
+					<option value="rhonda_o'shea_sig.jpg">Rhonda O'Shea</option>
+				</select>
+			</div>
+		</div>
+		<br>
 <div class="row">
-	<div class="col-md-4">
+	<div class="col-md-3">
 		
-	<form name="banner" class="form-inline">
+	<form name="banner" >
 		
-		<label for="banner_title"><h3>Banner<small> 13 oz. White Matte or Gloss Scrim Vinyl</small></h3></label>
+		<label for="banner_title"><h3>Banner<small><br>13 oz. White Matte or Gloss Scrim Vinyl</small></h3></label>
 		
 		<div class="form-group">
 		<label>Size</label> 
@@ -41,10 +65,10 @@ Quick Quote
 	</form>
 	</div>
 
-	<div class="col-md-4">	
-	<form name="foamcore" class="form-inline">
+	<div class="col-md-3">	
+	<form name="foamcore">
 		
-		<label for="foamcore"><h3>3/16" White Foamcore<small> Max Size of 48"x96"</small></h3></label>
+		<label for="foamcore"><h3>3/16" White Foamcore<small><br>Max Size of 48"x96"</small></h3></label>
 		
 		<div class="form-group">
 		<label>Size</label> 
@@ -60,10 +84,14 @@ Quick Quote
 	</form>
 	</div>
 
-	<div class="col-md-4">	
-	<form name="coroplast" class="form-inline">
+</div>
+<br><br>
+<div class="row">
+
+	<div class="col-md-3">	
+	<form name="coroplast" >
 		
-		<label for="coroplast"><h3>4mm Smooth White Coroplast<small> Max Size of 48"x96"</small></h3></label>
+		<label for="coroplast"><h3>4mm Smooth White Coroplast<small><br>Max Size of 48"x96"</small></h3></label>
 		
 		<div class="form-group">
 		<label>Size</label> 
@@ -78,13 +106,10 @@ Quick Quote
 			Your price:<INPUT type="text" class="form-control" id="coroplast_quote" readonly style="color:red;"/>
 	</form>
 	</div>
-</div>
-<br><br>
-<div class="row">
-	<div class="col-md-4">	
-	<form name="gator" class="form-inline">
+	<div class="col-md-3">	
+	<form name="gator">
 		
-		<label for="gator"><h3>3/16" White/Black Gatorboard<small> Max Size of 48"x96"</small></h3></label>
+		<label for="gator"><h3>3/16" White/Black Gatorboard<small><br>Max Size of 48"x96"</small></h3></label>
 		
 		<div class="form-group">
 		<label>Size</label> 
@@ -99,11 +124,12 @@ Quick Quote
 			Your price:<INPUT type="text" class="form-control" id="gator_quote" readonly style="color:red;"/>
 	</form>
 	</div>
-
-	<div class="col-md-4">	
-	<form name="satin" class="form-inline">
+</div>
+<div class="row">
+	<div class="col-md-3">	
+	<form name="satin">
 		
-		<label for="satin"><h3>White Satin Photo Paper<small> Max Width is 60"</small></h3></label>
+		<label for="satin"><h3>White Satin Photo Paper<small><br>Max Width is 60"</small></h3></label>
 		
 		<div class="form-group">
 		<label>Size</label> 
@@ -119,10 +145,10 @@ Quick Quote
 	</form>
 	</div>
 
-	<div class="col-md-4">	
-	<form name="pullup" class="form-inline">
+	<div class="col-md-3">	
+	<form name="pullup">
 		
-		<label for="pullup"><h3>Pullup Banner<small> 13 oz. White Matte or Gloss Scrim Vinyl</small></h3></label>
+		<label for="pullup"><h3>Pullup Banner<small><br>13 oz. White Matte or Gloss Scrim Vinyl</small></h3></label>
 		
 		<div class="form-group">
 		<label>Size</label> 
@@ -140,7 +166,7 @@ Quick Quote
 </div>
 <br><br><br>
 	<div class="row">
-	<div class="col-md-4 col-md-offset-4">
+	<div class="col-md-3">
 		<form method="post" action="loq_wf.php">
 		    <input type="hidden" id="bSubTotal" name="bSubTotal" value="">
 		    <input type="hidden" id="bTrimSize" name="bTrimSize" value="">
