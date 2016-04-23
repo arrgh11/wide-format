@@ -440,30 +440,44 @@ var sDesc = "Sign<br>";
 function calculatePullup(pullup){
 
   //Get selected data  
-  var paper_price = "<?php
+  var ppaper_price = "<?php
 								$xml=simplexml_load_file("wide_format_paper.xml") or die("Error: Cannot create object");
 								echo $xml->banner;
 								?>"
     
-  var length = document.getElementById("pullup_length").value;
-  var width = document.getElementById("pullup_width").value;
-var quantity = document.getElementById("pullup_quantity").value;
+  var plength = document.getElementById("pullup_length").value;
+  var pwidth = document.getElementById("pullup_width").value;
+var pquantity = document.getElementById("pullup_quantity").value;
     
     
   //convert data to integers
-  paper_price = parseInt(paper_price);
-  length = parseInt(length);
-  width = parseInt(width);
-quantity = parseInt(quantity);
+  ppaper_price = parseInt(ppaper_price);
+  plength = parseInt(plength);
+  pwidth = parseInt(pwidth);
+pquantity = parseInt(pquantity);
     
   //calculate total value  
-  var total = length*width;
-var total1 = total*paper_price;
-var total2 = total1*quantity;
-var total3 = total2+50; 
+  var ptotal = plength*pwidth;
+var ptotal1 = ptotal*ppaper_price;
+var ptotal2 = ptotal1*pquantity;
+var ptotal3 = ptotal2+50; 
+
+
+var pSubTotal = "Pullup Banner: " + pquantity + " = $" + ptotal3 +"<br>";
+var pTrimSize = "Pullup Banner: " + plength + " x " + pwidth +"<br>";
+var pSubstrate = 'Pullup Banner: 13 oz. White Matte or Gloss Scrim Vinyl' +"<br>";
+var pFinishing = "Pullup Banner: Includes Print and Install in Standard Mosquito 800 Silver Stand" +"<br>"; 
+var pDesc = "Pullup Banner<br>";  
     
   //print value to  PicExtPrice 
-  document.getElementById("pullup_quote").value=total3;
+  document.getElementById("pullup_quote").value=ptotal3;
+  document.getElementById("pSubTotal").value=pSubTotal;
+  document.getElementById("pTrimSize").value=pTrimSize;
+  document.getElementById("pSubstrate").value=pSubstrate;
+  document.getElementById("pFinishing").value=pFinishing;
+  document.getElementById("pDescription").value=pDesc;
+
+  return ptotal3;
 
 }
 
@@ -495,20 +509,23 @@ function grandTotal() {
 	var coro_sub = document.getElementById("coroplast_quote").value;
 	var gator_sub = document.getElementById("gator_quote").value;
 	var satin_sub = document.getElementById("satin_quote").value;
+	var pullup_sub = document.getElementById("pullup_quote").value;
 
 	banner_sub = parseInt(banner_sub);
 	foam_sub = parseInt(foam_sub);
 	coro_sub = parseInt(coro_sub);
 	gator_sub = parseInt(gator_sub);
 	satin_sub = parseInt(satin_sub);
+	pullup_sub = parseInt(pullup_sub);
 
 	if (isNaN(banner_sub)) banner_sub = 0;
 	if (isNaN(foam_sub)) foam_sub = 0;
 	if (isNaN(coro_sub)) coro_sub = 0;
 	if (isNaN(gator_sub)) gator_sub = 0;
 	if (isNaN(satin_sub)) satin_sub = 0;
+	if (isNaN(pullup_sub)) pullup_sub = 0;
 
-	var GrandTotal = banner_sub+foam_sub+coro_sub+gator_sub+satin_sub;
+	var GrandTotal = banner_sub+foam_sub+coro_sub+gator_sub+satin_sub+pullup_sub;
 	document.getElementById("grand_total").value="$"+GrandTotal;
 	document.getElementById("grand_total2").value="$"+GrandTotal;
 }
