@@ -180,6 +180,7 @@ Quick Quote
 
 
 		    <input type="hidden" id="grand_total" name="grand_total" value="">
+		    <input type="hidden" id="get_date" name="get_date" value="">
 		    <button type="submit" class="btn btn-info btn-lg" label="Generate Quote" onclick="grandTotal()">Generate Letter of Quote</button>
 		</form>
 	</div>
@@ -440,6 +441,24 @@ var total3 = total2+50;
 }
 
 function grandTotal() {
+
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth()+1; //January is 0!
+	var yyyy = today.getFullYear();
+
+	if(dd<10) {
+	    dd='0'+dd
+	} 
+
+	if(mm<10) {
+		mm='0'+mm
+	} 
+
+	today = mm+'/'+dd+'/'+yyyy;
+
+	document.getElementById("get_date").value = today;
+	document.getElementById("get_sig").value = get_sig;
 
 	var banner_sub = document.getElementById("banner_quote").value;
 	var foam_sub = document.getElementById("foam_quote").value;
