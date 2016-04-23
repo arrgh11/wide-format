@@ -207,6 +207,7 @@ Quick Quote
 
 		    <input type="hidden" id="grand_total" name="grand_total" value="">
 		    <input type="hidden" id="get_date" name="get_date" value="">
+		    <input type="hidden" id="get_sig" name="get_sig" value="">
 		    <button type="submit" class="btn btn-info btn-lg" label="Generate Quote" onclick="grandTotal()">Generate Letter of Quote</button>
 		</form>
 	</div>
@@ -482,6 +483,9 @@ function grandTotal() {
 	} 
 
 	today = mm+'/'+dd+'/'+yyyy;
+
+	var sig = document.getElementById("sales_rep");
+	var get_sig = sig.options[sig.selectedIndex].value;
 
 	document.getElementById("get_date").value = today;
 	document.getElementById("get_sig").value = get_sig;
