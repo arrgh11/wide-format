@@ -217,6 +217,11 @@ Quick Quote
 		    <input type="hidden" id="grand_total" name="grand_total" value="">
 		    <input type="hidden" id="get_date" name="get_date" value="">
 		    <input type="hidden" id="get_sig" name="get_sig" value="">
+
+		    <input type="hidden" id="get_company" name="get_company" value="">
+		    <input type="hidden" id="get_contact" name="get_contact" value="">
+		    <input type="hidden" id="get_email" name="get_email" value="">
+
 		    <button type="submit" class="btn btn-info btn-lg" label="Generate Quote" onclick="grandTotal()">Generate Letter of Quote</button>
 		</form>
 	</div>
@@ -510,8 +515,16 @@ function grandTotal() {
 	var sig = document.getElementById("sales_rep");
 	var get_sig = sig.options[sig.selectedIndex].value;
 
+
+	var get_company = document.getElementById("company").value;
+	var get_contact = document.getElementById("contact").value;
+	var get_email = document.getElementById("email").value;
+
 	document.getElementById("get_date").value = today;
 	document.getElementById("get_sig").value = get_sig;
+	document.getElementById("get_contact").value = get_contact;
+	document.getElementById("get_company").value = get_company;
+	document.getElementById("get_email").value = get_email;
 
 	var banner_sub = document.getElementById("banner_quote").value;
 	var foam_sub = document.getElementById("foam_quote").value;
