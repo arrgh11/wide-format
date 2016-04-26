@@ -21,7 +21,7 @@ Quick Quote
 </div>
 <br><br>
 		<div class="row">
-			<div class="col-md-6"><h3>Sales Rep:</h3>
+			<div class="col-md-3"><h3>Sales Rep:</h3>
 				<select id="sales_rep" class="form-control">
 					<option value="anthony_narducci_sig.jpg">Anthony Narducci</option>
 					<option value="bob_alderson_sig.jpg">Bob Alderson</option>
@@ -41,6 +41,15 @@ Quick Quote
 					<option value="sean_laizure_sig.jpg">Sean Laizure</option>
 					<option value="rhonda_o'shea_sig.jpg">Rhonda O'Shea</option>
 				</select>
+			</div>
+			<div class="col-md-3"><h3>Company</h3>
+				<input type="text" name="company" id="company" class="form-control" placeholder="Company Name" />
+			</div>
+			<div class="col-md-3"><h3>Contact Name</h3>
+				<input type="text" name="contact" id="contact" class="form-control" placeholder="Contact Name" />
+			</div>
+			<div class="col-md-3"><h3>Contact Email</h3>
+				<input type="text" name="email" id="email" class="form-control" placeholder="Contact Email">
 			</div>
 		</div>
 		<br>
