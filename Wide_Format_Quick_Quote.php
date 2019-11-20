@@ -1,5 +1,9 @@
 <?php
-$xml=simplexml_load_file("wide_format_paper.xml") or die("Error: Cannot create object");
+$xml = null;
+$xml = simplexml_load_file("wide_format_paper.xml");
+if ($xml == null) {
+	return;
+}
 ?>
 
 <html>
