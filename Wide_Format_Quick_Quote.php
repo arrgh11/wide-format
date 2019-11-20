@@ -199,7 +199,7 @@ Quick Quote
 function calculateBanner(banner){
 
   //Get selected data  
-  var banner_price = "<?php echo htmlspecialchars($xml->banner, ENT_QUOTES); ?>"
+  var banner_price = "<?php print_r(htmlspecialchars($xml->banner, ENT_QUOTES)); ?>"
     
   var blength = document.getElementById("banner_length").value;
   var bwidth = document.getElementById("banner_width").value;
@@ -239,7 +239,7 @@ return btotal3;
 function calculateFoamcore(foamcore){
 
   //Get selected data  
-  var foamcore_price = "<?php echo htmlspecialchars($xml->foamcore, ENT_QUOTES); ?>"
+  var foamcore_price = "<?php print_r(htmlspecialchars($xml->foamcore, ENT_QUOTES)); ?>"
     
   var flength = document.getElementById("foamcore_length").value;
   var fwidth = document.getElementById("foamcore_width").value;
@@ -279,7 +279,7 @@ return ftotal3;
 function calculateCoroplast(coroplast){
 
   //Get selected data  
-  var coroplast_price = "<?php echo htmlspecialchars($xml->coroplast, ENT_QUOTES);; ?>"
+  var coroplast_price = "<?php print_r(htmlspecialchars($xml->coroplast, ENT_QUOTES)); ?>"
     
   var clength = document.getElementById("coroplast_length").value;
   var cwidth = document.getElementById("coroplast_width").value;
@@ -319,7 +319,7 @@ return ctotal3;
 function calculateGator(gator){
 
   //Get selected data  
-  var gator_price = "<?php echo htmlspecialchars($xml->gatorboard, ENT_QUOTES); ?>"
+  var gator_price = "<?php print_r(htmlspecialchars($xml->gatorboard, ENT_QUOTES)); ?>"
     
   var glength = document.getElementById("gator_length").value;
   var gwidth = document.getElementById("gator_width").value;
@@ -360,7 +360,7 @@ return gtotal3;
 function calculateSatin(satin){
 
   //Get selected data  
-  var satin_price = "<?php echo htmlspecialchars($xml->satin, ENT_QUOTES); ?>"
+  var satin_price = "<?php print_r(htmlspecialchars($xml->satin, ENT_QUOTES)); ?>"
     
   var slength = document.getElementById("satin_length").value;
   var swidth = document.getElementById("satin_width").value;
@@ -401,7 +401,7 @@ var sDesc = "Sign<br>";
 function calculatePullup(pullup){
 
   //Get selected data  
-  var paper_price = "<?php echo htmlspecialchars($xml->banner, ENT_QUOTES); ?>"
+  var paper_price = "<?php print_r(htmlspecialchars($xml->banner, ENT_QUOTES)); ?>"
     
   var length = document.getElementById("pullup_length").value;
   var width = document.getElementById("pullup_width").value;
