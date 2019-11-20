@@ -1,3 +1,7 @@
+<?php
+$xml=simplexml_load_file("wide_format_paper.xml") or die("Error: Cannot create object");
+?>
+
 <html>
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -195,10 +199,7 @@ Quick Quote
 function calculateBanner(banner){
 
   //Get selected data  
-  var banner_price = "<?php
-								$xml=simplexml_load_file("wide_format_paper.xml") or die("Error: Cannot create object");
-								echo $xml->banner;
-								?>"
+  var banner_price = "<?php echo $xml->banner; ?>"
     
   var blength = document.getElementById("banner_length").value;
   var bwidth = document.getElementById("banner_width").value;
@@ -238,10 +239,7 @@ return btotal3;
 function calculateFoamcore(foamcore){
 
   //Get selected data  
-  var foamcore_price = "<?php
-								$xml=simplexml_load_file("wide_format_paper.xml") or die("Error: Cannot create object");
-								echo $xml->foamcore;
-								?>"
+  var foamcore_price = "<?php echo $xml->foamcore; ?>"
     
   var flength = document.getElementById("foamcore_length").value;
   var fwidth = document.getElementById("foamcore_width").value;
@@ -281,10 +279,7 @@ return ftotal3;
 function calculateCoroplast(coroplast){
 
   //Get selected data  
-  var coroplast_price = "<?php
-								$xml=simplexml_load_file("wide_format_paper.xml") or die("Error: Cannot create object");
-								echo $xml->coroplast;
-								?>"
+  var coroplast_price = "<?php echo $xml->coroplast; ?>"
     
   var clength = document.getElementById("coroplast_length").value;
   var cwidth = document.getElementById("coroplast_width").value;
@@ -324,10 +319,7 @@ return ctotal3;
 function calculateGator(gator){
 
   //Get selected data  
-  var gator_price = "<?php
-								$xml=simplexml_load_file("wide_format_paper.xml") or die("Error: Cannot create object");
-								echo $xml->gatorboard;
-								?>"
+  var gator_price = "<?php echo $xml->gatorboard; ?>"
     
   var glength = document.getElementById("gator_length").value;
   var gwidth = document.getElementById("gator_width").value;
@@ -368,10 +360,7 @@ return gtotal3;
 function calculateSatin(satin){
 
   //Get selected data  
-  var satin_price = "<?php
-								$xml=simplexml_load_file("wide_format_paper.xml") or die("Error: Cannot create object");
-								echo $xml->satin;
-								?>"
+  var satin_price = "<?php echo $xml->satin; ?>"
     
   var slength = document.getElementById("satin_length").value;
   var swidth = document.getElementById("satin_width").value;
@@ -412,10 +401,7 @@ var sDesc = "Sign<br>";
 function calculatePullup(pullup){
 
   //Get selected data  
-  var paper_price = "<?php
-								$xml=simplexml_load_file("wide_format_paper.xml") or die("Error: Cannot create object");
-								echo $xml->banner;
-								?>"
+  var paper_price = "<?php echo $xml->banner; ?>"
     
   var length = document.getElementById("pullup_length").value;
   var width = document.getElementById("pullup_width").value;
